@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://assets.reedpopcdn.com/mirage_I8wzLTO.jpg/BROK/thumbnail/1200x1200/quality/100/mirage_I8wzLTO.jpg" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <title>Gaming Website</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="logo">Gammers</a>
+
+      <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#tournaments">Tournaments</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="action">
+        <div class="searchBx">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <input type="text" placeholder="Search Games">
+        </div>
+      </div>
+      
+      <div class="toggleMenu" onClick="toggleMenu()"></div>
+    </header>
+
+    <!-- Home Banner -->
+    <div class="banner" id="home">
+      <div class="bg">
+        <div class="content">
+          <h2>A New Home for</br>
+          Game Lovers</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, incidunt.</p>
+          <a href="#" class="btn">Join Now</a>
+        </div>
+        <img src="./Img/assassin.png" alt="#">
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="about animeX" id="about">
+      <div class="contentBx">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A vero voluptas libero. Ullam eius dignissimos delectus maxime iste est suscipit magnam provident nisi corporis vero architecto quaerat repellat placeat molestiae error esse, possimus dolore culpa quibusdam consectetur. Perferendis obcaecati doloribus culpa eligendi cumque error architecto voluptatum magnam maiores voluptates iste dicta sint harum quia in fugiat illum, consequuntur eveniet reiciendis ducimus. Magnam quibusdam ipsum tenetur consectetur. Dolor enim aspernatur id mollitia modi in omnis numquam hic impedit architecto culpa exercitationem, harum dignissimos! Voluptatem minima harum ipsam, mollitia rerum nihil, similique non iste possimus nemo quo beatae dolorem consequuntur impedit quod molestias laborum repellendus eos ducimus cumque incidunt. Illum libero possimus optio accusamus quaerat corrupti ratione quisquam totam amet eum ipsam doloremque maiores perspiciatis blanditiis quos facilis eaque dolorum culpa odio, ipsa magnam quas omnis deserunt! Perspiciatis error deserunt placeat veritatis asperiores consectetur aliquam dolorem neque odio. Vero, inventore. Debitis quae sed dolorum quas explicabo ad voluptatum nemo saepe illum, ipsum praesentium consequuntur placeat voluptatem? Corporis possimus necessitatibus eligendi, numquam esse molestiae. Reiciendis itaque quidem hic? Blanditiis consequuntur repellat provident explicabo tenetur ut architecto quod quisquam vel. Maxime a odit illum, tempore fuga dolore itaque, assumenda aspernatur sint iusto atque nesciunt!</p>
+        <a href="#">Read More</a>
+      </div>
+      <img src="./Img/videogame.png" alt="#">
+    </div>
+
+    <!-- Games -->
+    <div class="games animeX" id="games">
+      <h2>Popular Games</h2>
+      <ul>
+        <li class="list active" data-filter="all">All</li>
+        <li class="list" data-filter="pc">PC Games</li>
+        <li class="list" data-filter="mobile">Mobile Games</li>
+      </ul>
+      <div class="cardBx">
+
+        <div class="card" data-item="mobile">
+          <img src="https://vga.com.pk/version2/asset/img/bg.png" alt="#">
+          <div class="content">
+            <h4>Battle Grounds Mobile</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="https://image.winudf.com/v2/image1/Y29tLm1heGdhbWVzLmFnZW9md2FyMV9pY29uXzE2MTc3ODE5MjFfMDA0/icon.png?fakeurl=1&h=240&type=webp" alt="#">
+          <div class="content">
+            <h4>Age Of War</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="https://play-lh.googleusercontent.com/fH70X7BerXQNHbWcFy7eI59AL_bmnRKIuRW3kWwH3C-qcrzwXplmN8uiRADA3_j3V8w" alt="#">
+          <div class="content">
+            <h4>Ghost Rider</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="https://upload.wikimedia.org/wikipedia/tr/b/be/Grand_Theft_Auto_V_oyununun_kapa%C4%9F%C4%B1.jpg" alt="#">
+          <div class="content">
+            <h4>Grand Theft Auto</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="https://i.scdn.co/image/ab67616d0000b273c72fc87f92c0e770bcc25ce7" alt="#">
+          <div class="content">
+            <h4>Free Fire</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="https://m.media-amazon.com/images/I/51Gwz0H0WOL.jpg" alt="#">
+          <div class="content">
+            <h4>Batman Arkham City</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="https://cdn1.epicgames.com/400347196e674de89c23cc2a7f2121db/offer/AC%20KINGDOM%20PREORDER_STANDARD%20EDITION_EPIC_Key_Art_Portrait_640x854-640x854-288120c5573756cb988b6c1968cebd86.png" alt="#">
+          <div class="content">
+            <h4>Assasssins Creed Valhalla</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="https://image.api.playstation.com/vulcan/ap/rnd/202011/0402/C784xeOFo2wViCf4m5bxgoeH.png" alt="#">
+          <div class="content">
+            <h4>Spider Man</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="pc">
+          <img src="https://www.mobygames.com/images/covers/l/474565-god-of-war-playstation-4-front-cover.png" alt="#">
+          <div class="content">
+            <h4>Gof of War</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="https://sharkapk.com/storage/appsCover/com.activision.callofduty.shooter/call-of-duty-mobile-apk-cover.jpg" alt="#">
+          <div class="content">
+            <h4>Call Of Duty</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="https://media.pocketgamer.com/artwork/na-32172-1605188311/Shadow-Fight-Arena-1010x505.jpg" alt="#">
+          <div class="content">
+            <h4>Shadow Fight Arena</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="mobile">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScoqoJQCbuzTCVtxJmPuuA_0eROE5KL2k5sQ&usqp=CAU" alt="#">
+          <div class="content">
+            <h4>BLOONS TD5</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing</br><span>$10</span></p>
+              <a href="#">Play Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tournaments -->
+    <div class="tournaments animeX" id="tournaments">
+      <h2>Live Tournaments</h2>
+      <div class="boxBx">
+
+        <div class="box">
+          <img src="https://travelsonclick.com/wp-content/uploads/2021/01/933055-pubg-2.jpg" alt="#">
+          <div class="content">
+            <h4><span>50</span> Matches in progress..</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt delectus voluptate laudantium sint! Tempore in dicta unde atque cum omnis, soluta rem sint consectetur quaerat assumenda. Perspiciatis itaque molestias ad corporis libero?</p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="https://play-lh.googleusercontent.com/57JMKLkzF1sLNU0xqznbUry-xJq97X_KZefMbZwPEqFvd4g1y7Lm4L6tTv8esgak5A=w526-h296-rw" alt="#">
+          <div class="content">
+            <h4><span>30</span> Matches in progress..</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt delectus voluptate laudantium sint! Tempore in dicta unde atque cum omnis, soluta rem sint consectetur quaerat assumenda. Perspiciatis itaque molestias ad corporis libero?</p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="https://sharkapk.com/storage/appsCover/com.activision.callofduty.shooter/call-of-duty-mobile-apk-cover.jpg" alt="#">
+          <div class="content">
+            <h4><span>40</span> Matches in progress..</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt delectus voluptate laudantium sint! Tempore in dicta unde atque cum omnis, soluta rem sint consectetur quaerat assumenda. Perspiciatis itaque molestias ad corporis libero?</p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="https://venturebeat.com/wp-content/uploads/2020/05/Garena-Free-Fire.jpg?w=1200&strip=all" alt="#">
+          <div class="content">
+            <h4><span>40</span> Matches in progress..</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt delectus voluptate laudantium sint! Tempore in dicta unde atque cum omnis, soluta rem sint consectetur quaerat assumenda. Perspiciatis itaque molestias ad corporis libero?</p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="https://assets.xboxservices.com/assets/39/09/3909c985-d854-4681-854d-2f89562086f1.jpg?n=PUBG_GLP-Page-Hero-1084_1920x1080_02.jpg" alt="#">
+          <div class="content">
+            <h4><span>20</span> Matches in progress..</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt delectus voluptate laudantium sint! Tempore in dicta unde atque cum omnis, soluta rem sint consectetur quaerat assumenda. Perspiciatis itaque molestias ad corporis libero?</p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="https://cdn2.unrealengine.com/14br-consoles-1920x1080-wlogo-1920x1080-432974386.jpg" alt="#">
+          <div class="content">
+            <h4><span>50</span> Matches in progress..</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt delectus voluptate laudantium sint! Tempore in dicta unde atque cum omnis, soluta rem sint consectetur quaerat assumenda. Perspiciatis itaque molestias ad corporis libero?</p>
+            <div class="btn">
+              <a href="#" class="watch">Watch</a>
+              <a href="#" class="join">Join Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact animeX" id="contact">
+      <img src="https://sensationhyderabadone.com/uploads/media/1072x1440/08/contact.png?v=1-0" alt="#">
+      <div class="form">
+        <h1>Contact Us</h1>
+
+        <div class="inputBx">
+          <p>Enter Name</p>
+          <input type="text" placeholder="Full Name">
+        </div>
+
+        <div class="inputBx">
+          <p>Enter E-mail</p>
+          <input type="email" placeholder="Full E-mail">
+        </div>
+
+        <div class="inputBx">
+          <p>Message</p>
+          <textarea placeholder="Type here..."></textarea>
+        </div>
+
+        <div class="inputBx">
+          <input type="submit" name="Submit">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="info">
+        <a href="#" class="logo">Gammers</a>
+        <p>2022 <i class='bx bx-copyright'></i> A.Y.V.A.Z.O.V</p>
+        <ul>
+          <li><a href=""><i class='bx bxl-facebook' ></i></a></li>
+          <li><a href=""><i class='bx bxl-instagram' ></i></a></li>
+          <li><a href=""><i class='bx bxl-twitter' ></i></a></li>
+          <li><a href=""><i class='bx bxl-youtube' ></i></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
